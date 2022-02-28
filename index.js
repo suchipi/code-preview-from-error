@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const kleur = require("kleur");
 const highlight = require("@babel/highlight").default;
 const stripAnsi = require("strip-ansi");
@@ -9,9 +10,11 @@ function getLocationFromError(error) {
   try {
     const firstStackLine = (
       error.stack
-        ?.split("\n")
-        .slice(1)
-        .find((line) => /at /.test(line)) || ""
+        ? error.stack
+            .split("\n")
+            .slice(1)
+            .find((line) => /at /.test(line)) || ""
+        : ""
     ).trim();
 
     if (!firstStackLine) return notFound;
