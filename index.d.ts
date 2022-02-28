@@ -11,4 +11,6 @@ type CodePreviewFromErrorModule = typeof codePreviewFromError & {
   getLocationFromError: typeof getLocationFromError;
 };
 
-export = CodePreviewFromErrorModule;
+declare var mod: CodePreviewFromErrorModule;
+
+export = mod;
