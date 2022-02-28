@@ -1,0 +1,36 @@
+{
+  "name": "code-preview-from-error",
+  "version": "1.0.0",
+  "description": "Generates a preview of the part of the code where an Error came from",
+  "main": "index.js",
+  "keywords": [
+    "code",
+    "preview",
+    "parse",
+    "error",
+    "stack",
+    "frame",
+    "get",
+    "location",
+    "line",
+    "row",
+    "column",
+    "number"
+  ],
+  "author": "Lily Scott <me@suchipi.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "eslint": "^8.10.0",
+    "eslint-config-unobtrusive": "^1.2.5"
+  },
+  "dependencies": {
+    "@babel/highlight": "^7.16.10",
+    "kleur": "^4.1.4",
+    "strip-ansi": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suchipi/code-preview-from-error.git"
+  }
+}
