@@ -1,6 +1,6 @@
 {
   "name": "code-preview-from-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a preview of the part of the code where an Error came from",
   "main": "index.js",
   "keywords": [
